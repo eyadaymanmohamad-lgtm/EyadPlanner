@@ -1,0 +1,28 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/bg" android:fillViewport="true">
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="18dp">
+    <TextView android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Eyad Planner" android:textColor="@color/text" android:textSize="30sp" android:textStyle="bold" />
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Study • Focus • Achieve" android:textColor="@color/muted" android:textSize="14sp" android:layout_marginBottom="18dp" />
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="مهام اليوم" android:textColor="@color/text" android:textSize="20sp" android:textStyle="bold" />
+    <LinearLayout android:id="@+id/tasksContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginTop="10dp" />
+
+    <Button android:id="@+id/addTaskButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="＋ إضافة مهمة" android:textAllCaps="false" android:layout_marginTop="10dp" />
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Pomodoro" android:textColor="@color/text" android:textSize="20sp" android:textStyle="bold" android:layout_marginTop="24dp" />
+    <TextView android:id="@+id/timerText" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="25:00" android:gravity="center" android:textColor="@color/text" android:textSize="54sp" android:textStyle="bold" android:layout_marginTop="8dp" />
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+        <Button android:id="@+id/startButton" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="▶ بدء" android:textAllCaps="false" />
+        <Button android:id="@+id/resetButton" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="↻ إعادة" android:textAllCaps="false" />
+    </LinearLayout>
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="📚 جدول المدرسة" android:textColor="@color/text" android:textSize="20sp" android:textStyle="bold" android:layout_marginTop="24dp" />
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="أضف صورة جدول المدرسة من الهاتف، وستظهر هنا في أي وقت." android:textColor="@color/muted" android:layout_marginTop="5dp" />
+    <Button android:id="@+id/pickScheduleButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="🖼 اختيار صورة الجدول" android:textAllCaps="false" android:layout_marginTop="8dp" />
+    <ImageView android:id="@+id/scheduleImage" android:layout_width="match_parent" android:layout_height="240dp" android:scaleType="fitCenter" android:background="@color/card" android:layout_marginTop="8dp" android:contentDescription="جدول المدرسة" />
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="📚 دروسي" android:textColor="@color/text" android:textSize="20sp" android:textStyle="bold" android:layout_marginTop="24dp" />
+    <TextView android:id="@+id/lessonsText" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="@color/text" android:textSize="16sp" android:lineSpacingExtra="8dp" android:layout_marginTop="8dp" />
+
+    <TextView android:id="@+id/statusText" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="@color/muted" android:textSize="12sp" android:layout_marginTop="24dp" android:gravity="center" android:layout_marginBottom="12dp" />
+</LinearLayout>
+</ScrollView>
